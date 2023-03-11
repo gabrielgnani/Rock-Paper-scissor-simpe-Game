@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+.container {
+  margin: auto;
+  text-align: center;
+  font-family: 'Tilt Warp', sans-serif; /* Use font name with quotes and specify a fallback font */
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.game {
+  margin: auto;
+  display: inline-block;
+  height: 100 px;
+  width: auto;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+} 
+.game:hover {
+  opacity: 0.9; 
+}
+
+.game:active {
+  transform: scale(0.95);
+}
+
+.info1 {
+  font-family: 'Tilt Warp', sans-serif;
+  margin: 20 px;
+  padding: 10 px;
+  background-color: #eee;
+  border: 1 px solid #ddd;
+  color: #020307;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.info1:hover {
+  transform: scale(1.05); 
+}
+
+.info1 p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600 px) {
+  .game {
+    margin: 10 px;
+  }
+}
+
+@media only screen and (min-width: 601 px) and (max-width: 900 px) {
+  .game {
+    margin: 20 px;
+  }
+}
+
+@media only screen and (min-width: 901 px) {
+  .game {
+    margin: 30 px;
+  }
+}
